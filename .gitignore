@@ -1,0 +1,98 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/BIMcollab BCF WPF MVVM/v16
+/bin/Debug/netcoreapp3.0/BIMcollab BCF WPF MVVM.runtimeconfig.json
+/bin/Debug/netcoreapp3.0/BIMcollab BCF WPF MVVM.runtimeconfig.dev.json
+/bin/Debug/netcoreapp3.0/BIMcollab BCF WPF MVVM.pdb
+/bin/Debug/netcoreapp3.0/BIMcollab BCF WPF MVVM.exe
+/bin/Debug/netcoreapp3.0/BIMcollab BCF WPF MVVM.dll.config
+/bin/Debug/netcoreapp3.0/BIMcollab BCF WPF MVVM.dll
+/bin/Debug/netcoreapp3.0/BIMcollab BCF WPF MVVM.deps.json
+/bin/Release/netcoreapp3.0/BIMcollab BCF WPF MVVM.runtimeconfig.json
+/bin/Release/netcoreapp3.0/BIMcollab BCF WPF MVVM.runtimeconfig.dev.json
+/bin/Release/netcoreapp3.0/BIMcollab BCF WPF MVVM.pdb
+/bin/Release/netcoreapp3.0/BIMcollab BCF WPF MVVM.exe
+/bin/Release/netcoreapp3.0/BIMcollab BCF WPF MVVM.dll.config
+/bin/Release/netcoreapp3.0/BIMcollab BCF WPF MVVM.dll
+/bin/Release/netcoreapp3.0/BIMcollab BCF WPF MVVM.deps.json
+/obj/Debug/netcoreapp3.0/Views/ProjectView.g.i.cs
+/obj/Debug/netcoreapp3.0/Views/ProjectView.g.cs
+/obj/Debug/netcoreapp3.0/Views/ProjectView.baml
+/obj/Debug/netcoreapp3.0/Views/IssueView.g.i.cs
+/obj/Debug/netcoreapp3.0/Views/IssueView.g.cs
+/obj/Debug/netcoreapp3.0/Views/IssueView.baml
+/obj/Debug/netcoreapp3.0/Views/IssueOverviewView.g.i.cs
+/obj/Debug/netcoreapp3.0/Views/IssueOverviewView.g.cs
+/obj/Debug/netcoreapp3.0/Views/IssueOverviewView.baml
+/obj/Debug/netcoreapp3.0/Views/EditIssueView.g.i.cs
+/obj/Debug/netcoreapp3.0/Views/EditIssueView.g.cs
+/obj/Debug/netcoreapp3.0/Views/EditIssueView.baml
+/obj/Debug/netcoreapp3.0/Views/ComponentView.g.i.cs
+/obj/Debug/netcoreapp3.0/Views/ComponentView.g.cs
+/obj/Debug/netcoreapp3.0/Views/ComponentView.baml
+/obj/Debug/netcoreapp3.0/Views/CommentView.g.i.cs
+/obj/Debug/netcoreapp3.0/Views/CommentView.g.cs
+/obj/Debug/netcoreapp3.0/Views/CommentView.baml
+/obj/Debug/netcoreapp3.0/MainWindow.g.i.cs
+/obj/Debug/netcoreapp3.0/MainWindow.g.cs
+/obj/Debug/netcoreapp3.0/MainWindow.baml
+/obj/Debug/netcoreapp3.0/GeneratedInternalTypeHelper.g.i.cs
+/obj/Debug/netcoreapp3.0/GeneratedInternalTypeHelper.g.cs
+/obj/Debug/netcoreapp3.0/BIMcollab BCF WPF MVVM_MarkupCompile.lref
+/obj/Debug/netcoreapp3.0/BIMcollab BCF WPF MVVM_MarkupCompile.i.cache
+/obj/Debug/netcoreapp3.0/BIMcollab BCF WPF MVVM_MarkupCompile.cache
+/obj/Debug/netcoreapp3.0/BIMcollab BCF WPF MVVM.pdb
+/obj/Debug/netcoreapp3.0/BIMcollab BCF WPF MVVM.g.resources
+/obj/Debug/netcoreapp3.0/BIMcollab BCF WPF MVVM.exe
+/obj/Debug/netcoreapp3.0/BIMcollab BCF WPF MVVM.dll
+/obj/Debug/netcoreapp3.0/BIMcollab BCF WPF MVVM.csprojAssemblyReference.cache
+/obj/Debug/netcoreapp3.0/BIMcollab BCF WPF MVVM.csproj.FileListAbsolute.txt
+/obj/Debug/netcoreapp3.0/BIMcollab BCF WPF MVVM.assets.cache
+/obj/Debug/netcoreapp3.0/BIMcollab BCF WPF MVVM.AssemblyInfoInputs.cache
+/obj/Debug/netcoreapp3.0/BIMcollab BCF WPF MVVM.AssemblyInfo.cs
+/obj/Debug/netcoreapp3.0/App.g.i.cs
+/obj/Debug/netcoreapp3.0/App.g.cs
+/obj/Release/netcoreapp3.0/Views/ProjectView.g.i.cs
+/obj/Release/netcoreapp3.0/Views/ProjectView.g.cs
+/obj/Release/netcoreapp3.0/Views/ProjectView.baml
+/obj/Release/netcoreapp3.0/Views/IssueView.g.i.cs
+/obj/Release/netcoreapp3.0/Views/IssueView.g.cs
+/obj/Release/netcoreapp3.0/Views/IssueView.baml
+/obj/Release/netcoreapp3.0/Views/IssueOverviewView.g.i.cs
+/obj/Release/netcoreapp3.0/Views/IssueOverviewView.g.cs
+/obj/Release/netcoreapp3.0/Views/IssueOverviewView.baml
+/obj/Release/netcoreapp3.0/Views/EditIssueView.g.i.cs
+/obj/Release/netcoreapp3.0/Views/EditIssueView.g.cs
+/obj/Release/netcoreapp3.0/Views/EditIssueView.baml
+/obj/Release/netcoreapp3.0/Views/ComponentView.g.i.cs
+/obj/Release/netcoreapp3.0/Views/ComponentView.g.cs
+/obj/Release/netcoreapp3.0/Views/ComponentView.baml
+/obj/Release/netcoreapp3.0/Views/CommentView.g.i.cs
+/obj/Release/netcoreapp3.0/Views/CommentView.g.cs
+/obj/Release/netcoreapp3.0/Views/CommentView.baml
+/obj/Release/netcoreapp3.0/MainWindow.g.i.cs
+/obj/Release/netcoreapp3.0/MainWindow.g.cs
+/obj/Release/netcoreapp3.0/MainWindow.baml
+/obj/Release/netcoreapp3.0/GeneratedInternalTypeHelper.g.i.cs
+/obj/Release/netcoreapp3.0/GeneratedInternalTypeHelper.g.cs
+/obj/Release/netcoreapp3.0/BIMcollab BCF WPF MVVM_MarkupCompile.lref
+/obj/Release/netcoreapp3.0/BIMcollab BCF WPF MVVM_MarkupCompile.i.cache
+/obj/Release/netcoreapp3.0/BIMcollab BCF WPF MVVM_MarkupCompile.cache
+/obj/Release/netcoreapp3.0/BIMcollab BCF WPF MVVM.pdb
+/obj/Release/netcoreapp3.0/BIMcollab BCF WPF MVVM.g.resources
+/obj/Release/netcoreapp3.0/BIMcollab BCF WPF MVVM.exe
+/obj/Release/netcoreapp3.0/BIMcollab BCF WPF MVVM.dll
+/obj/Release/netcoreapp3.0/BIMcollab BCF WPF MVVM.csprojAssemblyReference.cache
+/obj/Release/netcoreapp3.0/BIMcollab BCF WPF MVVM.csproj.FileListAbsolute.txt
+/obj/Release/netcoreapp3.0/BIMcollab BCF WPF MVVM.assets.cache
+/obj/Release/netcoreapp3.0/BIMcollab BCF WPF MVVM.AssemblyInfoInputs.cache
+/obj/Release/netcoreapp3.0/BIMcollab BCF WPF MVVM.AssemblyInfo.cs
+/obj/Release/netcoreapp3.0/App.g.i.cs
+/obj/Release/netcoreapp3.0/App.g.cs
+/obj/project.assets.json
+/obj/BIMcollab BCF WPF MVVM.csproj.nuget.g.targets
+/obj/BIMcollab BCF WPF MVVM.csproj.nuget.g.props
+/obj/BIMcollab BCF WPF MVVM.csproj.nuget.dgspec.json
+/obj/BIMcollab BCF WPF MVVM.csproj.nuget.cache
