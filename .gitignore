@@ -96,3 +96,4 @@
 /obj/BIMcollab BCF WPF MVVM.csproj.nuget.g.props
 /obj/BIMcollab BCF WPF MVVM.csproj.nuget.dgspec.json
 /obj/BIMcollab BCF WPF MVVM.csproj.nuget.cache
+/.vs/BIMcollab BCF WPF MVVM/DesignTimeBuild/.dtbcache
