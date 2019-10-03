@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="BIMcollab_BCF_WPF_MVVM.Views.IssueView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BIMcollab_BCF_WPF_MVVM.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="380" />
+        </Grid.RowDefinitions>
+
+        <CheckBox Name="ShowActiveCheckBox" IsChecked="{Binding ShowActive}" Content="Show Active" HorizontalAlignment="Left" Margin="16,0,0,0" Grid.Row="0" VerticalAlignment="Center" Checked="CheckBox_CheckedChanged" Unchecked="CheckBox_CheckedChanged"/>
+        <CheckBox Name="ShowResolvedCheckBox" IsChecked="{Binding ShowResolved}" Content="Show Resolved" HorizontalAlignment="Left" Margin="120,0,0,0" Grid.Row="0" VerticalAlignment="Center" Checked="CheckBox_CheckedChanged" Unchecked="CheckBox_CheckedChanged"/>
+        <CheckBox Name="ShowClosedCheckBox" IsChecked="{Binding ShowClosed}" Content="Show Closed" HorizontalAlignment="Left" Margin="230,0,0,0" Grid.Row="0" VerticalAlignment="Center" Checked="CheckBox_CheckedChanged" Unchecked="CheckBox_CheckedChanged"/>
+
+        <DataGrid Name="IssuesGrid" ItemsSource="{Binding IssuesView}" IsReadOnly="True" AutoGenerateColumns="False" AlternatingRowBackground="#aec6cf" SelectionChanged="IssuesGrid_SelectionChanged" GridLinesVisibility="None" SelectionMode="Single" Margin="0,3,0,0" Grid.Row="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Modified" Binding="{Binding Modified}" Width="70" MinWidth="70"></DataGridTextColumn>
+                <DataGridTextColumn Header="Title" Binding="{Binding Title}" Width="400" MinWidth="400"></DataGridTextColumn>
+                <DataGridTextColumn Header="Assigned to" Binding="{Binding Owner}" Width="100" MinWidth="100"></DataGridTextColumn>
+                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="70" MinWidth="70"></DataGridTextColumn>
+                <DataGridTextColumn Header="Created by" Binding="{Binding Creator}" Width="100" MinWidth="100"></DataGridTextColumn>
+            </DataGrid.Columns>
+
+            <DataGrid.Resources>
+                <ContextMenu x:Key="RowMenu">
+                    <MenuItem Name="PublishMenuItem" Header="Publish issues" Click="PublishMenuItem_OnClick"/>
+                    <MenuItem Name="EditMenuItem" Header="Edit issue" Click="EditMenuItem_OnClick"/>
+                    <MenuItem Name="AddMenuItem" Header="Add issue" Click="AddMenuItem_OnClick"/>
+                    <MenuItem Name="Components" Header="Components" Click="ComponentsItem_OnClick"/>
+                </ContextMenu>
+            </DataGrid.Resources>
+
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow" >
+                    <Setter Property="ContextMenu" Value="{StaticResource RowMenu}" />
+                </Style>
+            </DataGrid.RowStyle>
+        </DataGrid>
+    </Grid>
+</UserControl>

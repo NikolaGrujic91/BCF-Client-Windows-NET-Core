@@ -1,0 +1,20 @@
+﻿<Window x:Class="BIMcollab_BCF_WPF_MVVM.Views.ComponentView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BIMcollab_BCF_WPF_MVVM.Views"
+        mc:Ignorable="d"
+        Title="Components" Height="450" Width="450" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
+    <Grid>
+        <DataGrid Name="ComponentsGrid" ItemsSource="{Binding Components}" HorizontalAlignment="Stretch" Margin="10,10,9.667,10" VerticalAlignment="Stretch" IsReadOnly="True" AutoGenerateColumns="False" AlternatingRowBackground="#aec6cf" GridLinesVisibility="None" SelectionMode="Single">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="IfcGuid" Binding="{Binding IfcGUID}" Width="190" MinWidth="190"></DataGridTextColumn>
+                <DataGridTextColumn Header="Visible" Binding="{Binding Visible}" Width="50" MinWidth="50"></DataGridTextColumn>
+                <DataGridTextColumn Header="Selected" Binding="{Binding Selected}" Width="70" MinWidth="70"></DataGridTextColumn>
+                <DataGridTextColumn Header="Colored" Binding="{Binding Colored}" Width="70" MinWidth="70"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

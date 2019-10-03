@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>BIMcollab_BCF_WPF_MVVM</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Binaries\**" />
+    <Compile Remove="img\**" />
+    <EmbeddedResource Remove="Binaries\**" />
+    <EmbeddedResource Remove="img\**" />
+    <None Remove="Binaries\**" />
+    <None Remove="img\**" />
+    <Page Remove="Binaries\**" />
+    <Page Remove="img\**" />
+  </ItemGroup>
+
+</Project>
