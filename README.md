@@ -70,6 +70,7 @@ To run this project make sure you have installed:
 * Edit issue
 * Overview of components stored in issue
 * Filter issues by status
+* Version of API, WebService and Database
 
 To-do list:
 * Bugfixes
