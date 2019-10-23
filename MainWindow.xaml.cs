@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
+using System.Windows.Media.Imaging;
 using BIMcollab_BCF_WPF_MVVM.Views;
 
 namespace BIMcollab_BCF_WPF_MVVM
@@ -13,6 +15,7 @@ namespace BIMcollab_BCF_WPF_MVVM
         public MainWindow()
         {
             this.InitializeComponent();
+            this.SetIcon();
 
             this.ProjectViewControl.Connected += this.ProjectViewControlOnConnected;
             this.IssueViewControl.SelectionChanged += this.IssueViewControlOnSelectionChanged;
@@ -39,6 +42,16 @@ namespace BIMcollab_BCF_WPF_MVVM
                 this.IssueOverviewViewControl.Clear();
                 this.CommentViewControl.Clear();
             }
+        }
+
+        #endregion
+
+        #region Methods
+
+        private void SetIcon()
+        {
+            var iconUri = new Uri("../../../img/BIMcollab_Icon.ico", UriKind.RelativeOrAbsolute);
+            this.Icon = BitmapFrame.Create(iconUri);
         }
 
         #endregion
