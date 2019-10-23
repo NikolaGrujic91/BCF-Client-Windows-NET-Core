@@ -24,6 +24,21 @@ namespace BIMcollab_BCF_WPF_MVVM.ViewModel
             get { return this.ActiveProject.Title; }
         }
 
+        public string ApiVersion
+        {
+            get { return this.ActiveProject.ApiVersion; }
+        }
+
+        public string WebServiceVersion
+        {
+            get { return this.ActiveProject.WebServiceVersion; }
+        }
+
+        public string DatabaseVersion
+        {
+            get { return this.ActiveProject.DatabaseVersion; }
+        }
+
         #endregion
 
         #region Methods

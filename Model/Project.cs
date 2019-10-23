@@ -80,6 +80,21 @@ namespace BIMcollab_BCF_WPF_MVVM.Model
             get { return (int)this.project.GetDefaultIssuePriorityIndex(); }
         }
 
+        public string ApiVersion
+        {
+            get { return BC_DataModel.GetInstance().GetAPIVersionString(); }
+        }
+
+        public string WebServiceVersion
+        {
+            get { return BC_DataModel.GetInstance().GetWSVersionString(); }
+        }
+
+        public string DatabaseVersion
+        {
+            get { return BC_DataModel.GetInstance().GetDBVersionString(); }
+        }
+
         #endregion
 
         #region Methods

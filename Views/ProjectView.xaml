@@ -20,5 +20,9 @@
         <Label Content="E-mail:" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top"/>
         <Label Content="Password:" HorizontalAlignment="Left" Margin="359,10,0,0" VerticalAlignment="Top"/>
 
+        <Label Name ="ApiVersionLabel" Content="API:" HorizontalAlignment="Right" Margin="0,0,0,42" VerticalAlignment="Bottom" Grid.Row="0" RenderTransformOrigin="34.458,0.516" Width="123" Height="20" FontSize="8"/>
+        <Label Name ="WebServiceVersionLabel" Content="WebService:" HorizontalAlignment="Right" Margin="0,0,0,23" VerticalAlignment="Bottom" Grid.Row="0" Width="123" Height="19" FontSize="8"/>
+        <Label Name ="DatabaseVersionLabel" Content="Database:" HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.Row="0" Width="123" Height="23" FontSize="8"/>
+
     </Grid>
 </UserControl>

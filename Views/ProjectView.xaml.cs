@@ -58,6 +58,9 @@ namespace BIMcollab_BCF_WPF_MVVM.Views
                 this.UsernameTextBox.Text = string.Empty;
                 this.PasswordBox.Password = string.Empty;
                 this.InfoLabel.Content = $"Active project: {this.projectViewModelObject.ActiveProjectTitle}";
+                this.ApiVersionLabel.Content = $"API: {this.projectViewModelObject.ApiVersion}";
+                this.WebServiceVersionLabel.Content = $"WebService: {this.projectViewModelObject.WebServiceVersion}";
+                this.DatabaseVersionLabel.Content = $"Database: {this.projectViewModelObject.DatabaseVersion}";
 
                 this.Connected?.Invoke(new ConnectedEventArgs(this.projectViewModelObject.ActiveProject));
             }
