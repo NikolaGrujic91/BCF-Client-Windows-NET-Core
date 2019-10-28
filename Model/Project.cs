@@ -147,12 +147,15 @@ namespace BIMcollab_BCF_WPF_MVVM.Model
         private void GetMilestones()
         {
             this.Milestones = new List<string>();
-            uint numberOfStatuses = this.project.GetNumberOfMilestones();
+            uint numberOfMilestones = this.project.GetNumberOfMilestones();
 
-            for (uint i = 0; i < numberOfStatuses; i++)
+            for (uint i = 0; i < numberOfMilestones; i++)
             {
-                string status = this.project.GetMilestoneLabelByIndex(i);
-                this.Milestones.Add(status);
+                if (this.project.GetMilestoneActiveByIndex(i))
+                {
+                    string milestone = this.project.GetMilestoneLabelByIndex(i);
+                    this.Milestones.Add(milestone);
+                }
             }
         }
 
@@ -163,8 +166,11 @@ namespace BIMcollab_BCF_WPF_MVVM.Model
 
             for (uint i = 0; i < numberOfAreas; i++)
             {
-                string area = this.project.GetAreaLabelByIndex(i);
-                this.Areas.Add(area);
+                if (this.project.GetAreaActiveByIndex(i))
+                {
+                    string area = this.project.GetAreaLabelByIndex(i);
+                    this.Areas.Add(area);
+                }
             }
         }
 
@@ -175,8 +181,11 @@ namespace BIMcollab_BCF_WPF_MVVM.Model
 
             for (uint i = 0; i < numberOfLabels; i++)
             {
-                string label = this.project.GetIssueLabelLabelByIndex(i);
-                this.Labels.Add(label);
+                if (this.project.GetIssueLabelActiveByIndex(i))
+                {
+                    string label = this.project.GetIssueLabelLabelByIndex(i);
+                    this.Labels.Add(label);
+                }
             }
         }
 
@@ -187,8 +196,11 @@ namespace BIMcollab_BCF_WPF_MVVM.Model
 
             for (uint i = 0; i < numberOfTypes; i++)
             {
-                string type = this.project.GetIssueTypeLabelByIndex(i);
-                this.Types.Add(type);
+                if (this.project.GetIssueTypeActiveByIndex(i))
+                {
+                    string type = this.project.GetIssueTypeLabelByIndex(i);
+                    this.Types.Add(type);
+                }
             }
         }
 
@@ -199,8 +211,11 @@ namespace BIMcollab_BCF_WPF_MVVM.Model
 
             for (uint i = 0; i < numberOfPriorities; i++)
             {
-                string priority = this.project.GetIssuePriorityLabelByIndex(i);
-                this.Priorities.Add(priority);
+                if (this.project.GetIssuePriorityActiveByIndex(i))
+                {
+                    string priority = this.project.GetIssuePriorityLabelByIndex(i);
+                    this.Priorities.Add(priority);
+                }
             }
         }
 
@@ -211,8 +226,11 @@ namespace BIMcollab_BCF_WPF_MVVM.Model
 
             for (uint i = 0; i < numberOfStatuses; i++)
             {
-                string status = this.project.GetIssueStatusLabelByIndex(i);
-                this.Statuses.Add(status);
+                if (this.project.GetIssueStatusActiveByIndex(i))
+                {
+                    string status = this.project.GetIssueStatusLabelByIndex(i);
+                    this.Statuses.Add(status);
+                }
             }
         }
 
@@ -241,8 +259,11 @@ namespace BIMcollab_BCF_WPF_MVVM.Model
 
             for (uint i = 0; i < numberOfVisibilities; i++)
             {
-                string visibility = this.project.GetIssueVisibilityLabelByIndex(i);
-                this.Visibilities.Add(visibility);
+                if (this.project.GetIssueVisibilityActiveByIndex(i))
+                {
+                    string visibility = this.project.GetIssueVisibilityLabelByIndex(i);
+                    this.Visibilities.Add(visibility);
+                }
             }
         }
 
